@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Submission Form</title>
+</head>
+<body>
+    <script src="script.js" defer></script>
+    <div class="container">
+        <div class="left-container">
+            <img src="sky.jpg" alt="Beautiful sky at sunset" class="background">
+            <div class="banner">
+                <img src="logo.jpg" alt="Logo" class="logo">
+            </div>
+        </div>
+        <div>
+            <div class="description">Snapshot,
+                where you share your photos with the world.
+            </div>
+            <form action="" method="post">
+                <div>
+                    <h4>Sign up now!</h4>
+                    <div>
+                        <div>
+                            <label for="first-name" class="required">FIRST NAME</label>
+                            <input required type="text" id="first-name" placeholder="" pattern="[a-zA-Z]+" 
+                                oninput="this.setCustomValidity('')"
+                                oninvalid="this.setCustomValidity('Please enter your name.')">
+                        </div>
+                        <div>
+                            <label for="last-name" class="required">LAST NAME</label>
+                            <input required type="text" id="last-name" placeholder="" pattern="[a-zA-Z]+" 
+                                oninput="this.setCustomValidity('')"
+                                oninvalid="this.setCustomValidity('Please enter your name.')"/>
+                        </div>
+                        <div>
+                            <label for="email" class="required">EMAIL</label>
+                            <input required type="email" id="email" placeholder="" 
+                                oninput="this.setCustomValidity('')"
+                                oninvalid="this.setCustomValidity('Please enter a valid email address.')">
+                        </div>
+                        <div>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <div>
+                            <label for="password" class="required">PASSWORD</label>
+                            <input required type="password" id="password" placeholder="" pattern="\w{6,}"
+                                oninput="this.setCustomValidity('')"
+                                oninvalid="this.setCustomValidity('Please enter a password consisting of 6 or more alphanumeric characters.')">
+                        </div>
+                        <div>
+                            <label for="re-password" class="required">CONFIRM PASSWORD</label>
+                            <input required type="password" id="re-password" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+            <div class="login">Already have an account? <a href="blahblah">Log in</a></div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
